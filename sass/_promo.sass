@@ -1,0 +1,187 @@
+.cards
+    flex-shrink: 0
+    margin-top: 74px
+    display: grid
+    grid-template-columns: 398.678px 398.678px 398.678px
+    grid-template-rows: 547px
+    justify-content: space-between
+    +book
+        grid-template-columns: auto
+        justify-content: center
+    +tablet
+        display: block
+    .view
+        display: none
+        margin-top: 40px
+        color: #000000
+        font-size: 23px
+        text-align: center
+        +book
+            display: block
+    .hide
+        display: block
+        +book
+            display: none
+    .card
+        max-width: 398.678px
+        height: 547px
+        position: relative
+        +mobile
+            max-width: 280px
+        img
+            +mobile
+                width: 280px
+        .info
+            position: absolute
+            top: 414px
+            width: 400.678px
+            height: 133px
+            display: flex
+            align-items: center
+            flex-wrap: nowrap
+            justify-content: space-around
+            background: #FFF
+            box-shadow: 0px 4px 59px -14px rgba(171, 124, 0, 0.29)
+            +mobile
+                width: 280px
+                top: 300px
+            a
+                width: 38px
+                height: 30px
+            p
+                color: #000
+                font-size: 14px
+                font-weight: 700
+                width: 310px
+            img
+                height: 38px
+                width: 38px
+
+.company
+    margin-top: 100px
+    display: flex
+    flex-wrap: wrap
+    width: 100%
+    justify-content: space-between
+    +desktop
+        justify-content: start
+    div
+        margin-top: 45px
+        display: flex
+        flex-direction: column
+        flex-wrap: wrap
+        justify-content: space-between
+        align-content: flex-start
+        max-width: 700px
+        height: 70px
+        +tablet
+            height: 270px
+    .advantages
+        margin-top: 71px
+        display: block
+        height: 370px
+        +tablet
+            height: 1100px
+    
+    h2
+        color: #323232
+        font-size: 36px
+        font-weight: 600
+        margin-bottom: 71px
+    h4
+        color: #4A4A4A
+        font-size: 29px
+        font-weight: 400
+        margin-left: 30px
+    p
+        color: #4A4A4A
+        font-size: 21px
+        margin-left: 30px
+        font-weight: 400
+    .house-card
+        margin-top: 142px
+        max-width: 476px
+        height: 431px
+        background-color: $main-color
+        +pc
+            display: none
+        img
+            margin-top: -60px
+            max-width: 440.658px
+            height: 555px
+            flex-shrink: 0
+            transform: translateX(76px)
+            +pc
+                max-width: 250px
+
+.book-form
+    background: #FFF5DA
+    margin-top: 162px
+    padding: 127px 260px 104px 260px
+    max-width: 1240px
+    display: flex
+    flex-direction: column
+    +pc
+        padding: 260px 0 260px 0
+    +
+    h4
+        color: #323232
+        text-align: center
+        font-size: 36px
+        font-weight: 600
+    p
+        margin-top: 15px
+        color: #646464
+        text-align: center
+        font-size: 29px
+        font-weight: 400
+    .cellphone
+        display: flex
+        flex-wrap: nowrap
+        align-items: center
+        justify-content: space-around
+        margin-top: 25px
+        width: 702.434px
+        height: 78px
+        border: 1px solid #000
+        background: #FFF
+        +tablet
+            width: 270px
+        
+        img
+            width: 41.966px
+            height: 30px
+        a
+            color: #000
+            font-size: 29px
+            font-weight: 400
+            flex-shrink: 0
+            background: $main-color
+            padding: 10px 41px 11px 43px
+        #phone
+            border: none
+            max-width: 400px
+            font-size: 20px
+            height: 60px
+            +tablet
+                max-width: 30px
+            &:focus
+                outline-style: none
+
+.ideas
+    max-width: 1240px
+    h5
+        margin-top: 122px
+        color: #323232
+        font-size: 36px
+        font-weight: 600
+    .photos
+        max-width: 1240px
+        padding-top: 45px
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        img
+            width: 292.293px
+            padding-top: 20px
+            height: 406px
